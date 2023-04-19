@@ -1,0 +1,3 @@
+// Only change code below this line
+
+const myArray = [["Array", 2], ["net", 4]];
