@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!--<iframe src="https://example.com" id="iframe"></iframe>
+    <script>
+        iframe.onload = function() {
+            //we get the reference to the inner window
+            let iframeWindow = iframe.contentWindow; //OK
+            try {
+                //...but not to the document inside it 
+                let doc = iframe.contentDocument; //ERROR
+            } catch (e) {
+                alert(e); // Security error (another origin)
+            }
+            // also we can't READ the URL of the page in iframe
+            try {
+                // Can't read URL from the Location object
+                let href = iframe.contentWindow.location.href; // ERROR
+            } catch(e) {
+                alert(e); // Security error 
+            }
+            // ...we can WRITE into location (and thus load something else into the iframe)!
+            iframe.contentWindow.location = '/'; // OK
+            iframe.onload = null; // clear the handler, not to run it after the location change
+        };
+    </script> -->
+    <!-- iframe from the same site -->
+    <iframe from the same site --></iframe>
+
+    <script>
+        iframe.onload = function() {
+            // just do anything
+            iframe.contentDocument.body.prepend("Hello, world!");
+        };
+    </script>
+</body>
+</html>

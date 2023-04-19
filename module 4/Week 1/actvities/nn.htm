@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let arr = new Uint16Array(4); // create typed array for 4 integers
+alert( Uint16Array.BYTES_PER_ELEMENT ); // 2 bytes per integer
+alert( arr.byteLength ); // 8 (size in bytes)
+
+let arr8 = new Uint8Array([0, 1, 2, 3]);
+// another view on the same data
+let arr16 = new Uint16Array(arr8.buffer);
+
+</script> 
+</body>
+</html>

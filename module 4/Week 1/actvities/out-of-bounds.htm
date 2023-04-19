@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let uint8array = new Uint8Array(16);
+
+        let num = 256;
+        alert(num.toString(2)); // 100000000 (binary represantation)
+
+        uint8array[0] = 256
+        uint8array[0] = 267
+
+        alert(uint8array[0]); // 0
+        alert(uint8array[1]); // 1
+    </script>
+</body>
+</html>
