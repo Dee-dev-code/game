@@ -1,0 +1,5 @@
+//
+ var myName = "your name";
+ var myFirstName= "Dee"
+ var myLastName= "Som"
+ //
